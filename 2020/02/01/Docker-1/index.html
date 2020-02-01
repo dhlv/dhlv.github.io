@@ -88,7 +88,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://www.docker.com/sites/default/files/d8/styles/large/public/2018-11/container-what-is-container.png?itok=vle7kjDj">
 <meta property="article:published_time" content="2020-02-01T14:51:00.000Z">
-<meta property="article:modified_time" content="2020-02-01T21:55:32.593Z">
+<meta property="article:modified_time" content="2020-02-01T23:09:01.278Z">
 <meta property="article:author" content="Donghao Lyu">
 <meta property="article:tag" content="docker">
 <meta property="article:tag" content="study notes">
@@ -365,6 +365,8 @@
 <li>Production</li>
 </ul>
 <p>Sometimes the code works perfectly on the dev environment, but it crashes on the other.</p>
+<a id="more"></a>
+
 <p>Therefore, suppose if the Development Team wants to deploy a web project in the past days, they have to set up environments for their database, front-end and server separately, and make sure there are no conflicts between them. After this, they need to test the web application in different environments to make sure it works fine there as well. If there is an error, they have to look back in and change the environment, and there is a high probability to affect other services.  When deploying, they send the application to a different machine of the Operation Team, and the Dev Team has to teach them how to set up the environment again.</p>
 <p>From the above example, we can see that the deployment process is super time-consuming, and the migration can be really difficult.</p>
 <p>Also, people used a virtual machine to solve the conflict problem among different apps, which in this case means to virtualize a computer into multiple operating systems. Hence, different applications can run on different operating systems simultaneously without influencing each other. However, VMs always take a large amount of the HD space, and it takes minutes to bring up a VM. </p>

@@ -261,7 +261,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/01/%E5%8D%9A%E5%AE%A2%E5%90%8D%E5%AD%97/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/01/Docker/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Donghao Lyu">
@@ -280,7 +280,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2020/02/01/%E5%8D%9A%E5%AE%A2%E5%90%8D%E5%AD%97/" itemprop="url">Welcome</a></h1>
+                <a class="post-title-link" href="/2020/02/01/Docker/" itemprop="url">Welcome</a></h1>
         
 
         <div class="post-meta">
@@ -332,9 +332,22 @@
       
         
           
-            <h3 id="1-Me"><a href="#1-Me" class="headerlink" title="1. Me"></a>1. Me</h3><p>Welcome to my site! I am Donghao Lyu, a Computer Science student in Dalhousie University. During the past two years, I found coding is quite interesting. I really love learning new technologies and exploring fun things that are new to me. </p>
-<h3 id="2-This-website"><a href="#2-This-website" class="headerlink" title="2. This website"></a>2. This website</h3><p>In my free time, I like browsing others’ blogs on <a href="https://medium.com/" target="_blank" rel="noopener">Medium</a>, <a href="https://www.geeksforgeeks.org/" target="_blank" rel="noopener">GeeksforGeeks</a>, etc. There are so many wonderful articles and discussions out there for beginners to ramp up a topic. Thanks to those brilliant authors, I never feel boring when starting a new topic that I am not familiar with. Therefore, they inspired me to start a blog recording the knowledge or new things I learned. Although at the beginning my ideas and understandings may be naive and simple to the experienced people, I believe they will be much more valuable in the future.</p>
-<p>Thanks to the <a href="https://zhuanlan.zhihu.com/p/26625249" target="_blank" rel="noopener">tutorial</a> from <a href="http://iamwr.com/" target="_blank" rel="noopener">吴润</a>.</p>
+            <h3 id="Intro-to-Docker"><a href="#Intro-to-Docker" class="headerlink" title="Intro to Docker"></a>Intro to Docker</h3><h3 id="1-What-is-Docker"><a href="#1-What-is-Docker" class="headerlink" title="1. What is Docker?"></a>1. What is Docker?</h3><p>For my understanding, I consider Docker like a big ship. This ship can load a huge amount of containers on it, and each of them may contain different types of goods. They do not influence each other because they are individually blocked. Therefore, I do not need two ships to load food and chemistry products.</p>
+<p>Docker does the similar thing. Here is an image from <a href="https://www.docker.com/resources/what-container" target="_blank" rel="noopener">Docker offical website</a> showing how Docker works:<br><img src="https://www.docker.com/sites/default/files/d8/styles/large/public/2018-11/container-what-is-container.png?itok=vle7kjDj" alt=""><br>In this case, our containers for food and chemistry products become the containters for differnet app such as Node.js, MongoDB, etc. Each of them has its own dependencies, but they do not influence each other.</p>
+<h3 id="2-Why-use-Docker"><a href="#2-Why-use-Docker" class="headerlink" title="2. Why use Docker?"></a>2. Why use Docker?</h3><p>When coding for projects in university, sometimes the code works just fine on my machine, but if my teammates ran on theirs, there would be errors because of the environment settings. Therefore, it is always time-consuming and difficult to set up the same environment and configurations on each laptop. </p>
+<p>Also, in a company, there are different environments as well:</p>
+<ul>
+<li>Dev</li>
+<li>Test</li>
+<li>Production</li>
+</ul>
+<p>Sometimes the code works perfectly on the dev environment, but it crashes on the other.</p>
+<p>Therefore, suppose if the Development Team wants to deploy a web project in the past days, they have to set up environments for their database, front-end and server separately, and make sure there are no conflicts between them. After this, they need to test the web application on different environments to make sure it works fine there as well. If there is an error, they have to look back in and change the environment, and there is a high probability to affect other services.  When deploying, they send the application to a different machine of the Opeartion Team, and the Dev team has to teach them how to set up the environment again.</p>
+<p>From the above example, we can see that the deployment process is super time-consuming, and the migration can be really difficult.</p>
+<p>Also, people used virtual machine to solve the conflict problem among different apps, which in this case means to virtualize a computer into multiple operating systems. Hence, different applications can run on different operating systems simultaneously without influencing each other. However, VMs always take large amount of the HD space, and it takes minutes to bring up a VM. </p>
+<p>In contrast, Docker can run on almost every systems and platforms. Once the configuration for the application are done in the container, it can be used on different machines without any errors. If there is an upadate to the dependencies, only a small amount of work is needed, which makes the management more efficient.</p>
+<p>Meanwhile, Docker is usually brought up in seconds, and the containers are much smaller in size. It saves people more time. </p>
+<p><em>Study notes will be updated with the process</em></p>
 
           
         
